@@ -1,0 +1,68 @@
+.example {
+    width: 408px;
+    height: 200px;
+    margin-bottom: 40px;
+    background-color: cadetblue;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 3px -3px 20px -10px #000000;
+}
+
+.example:nth-child(2n + 1) {
+    margin-right: 20px;
+}
+
+.example-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px 30px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.example-link:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.example-link:hover .example-heading {
+    display: block;
+}
+
+.example-link:hover .example-text {
+    display: inline;
+}
+
+.example-heading {
+    display: none;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: 200;
+    font-size: 26px;
+    color: #000000;
+}
+
+.example-text {
+    display: none;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: 200;
+    font-size: 16px;
+    color: #707070;
+}
+
+@media screen and (max-width:975px) {
+    .example {
+        margin: 0 auto 30px;
+    }
+
+    .example:nth-child(2n + 1) {
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (max-width:975px) {
+    .example {
+        width: 350px;
+        height: 171px;
+    }
+}

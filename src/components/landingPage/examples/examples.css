@@ -1,0 +1,48 @@
+.examples-block {
+    position: sticky;
+    z-index: 3;
+    width:100%;
+    padding: 50px 0 50px;
+    background-color: #fafafa;
+}
+
+.examples-block__heading {
+    margin: 0 0 50px 100px;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: bold;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: rgb(76, 91, 92);
+}
+
+.examples {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 250px;
+    list-style: none;
+}
+
+@media screen and (max-width:1350px) {
+    .examples {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (max-width:1145px) {
+    .examples {
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width:975px) {
+    .examples {
+        display: block;
+        padding: 0;
+    }
+
+    .examples-block__heading {
+        margin: 0 0 50px;
+        text-align: center;
+    }
+}
